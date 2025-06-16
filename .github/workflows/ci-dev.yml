@@ -4,8 +4,7 @@ on:
     branches:
       - 'ROBO-**'
 jobs:
-  Build:
-    uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-main.yml@main
-    with:
-      appType: 'maven'
+  Reuse:
+    uses: udayach123/roboshop-github-actions/.github/workflows/ci-dev.yml@main
+
 
