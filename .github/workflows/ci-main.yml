@@ -8,8 +8,7 @@ jobs:
   Build:
     uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
-      appType: 'maven'
-
+      appType: '${{ inputs.appType }}'
   Test:
     runs-on: ubuntu-latest
     needs: Build
