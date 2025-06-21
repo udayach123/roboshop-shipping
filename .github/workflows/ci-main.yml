@@ -9,6 +9,9 @@ jobs:
     uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'maven'
+      appName: 'shipping'
+    secrets:
+          azuresecrets: ${{ secrets.azuresecrets }}
 
 
 
